@@ -5,4 +5,4 @@
 
 FROM erichhuang/ubuntur
 
-RUN Rscript -e "install.packages('randomForest')"
+RUN Rscript -e "install.packages('randomForest', repos = 'http://watson.nci.nih.gov/cran_mirror/')"
